@@ -5,7 +5,6 @@ window.addEventListener("load", function(){
   .then(response => response.json())
   .then(data => {
     data.forEach(link => {
-      console.log(link);
       let linkElem = document.createElement("a");
       linkElem.href = "./" + link.url + "/";
 
@@ -23,6 +22,23 @@ window.addEventListener("load", function(){
       linkElem.appendChild(linkDesc);
 
       document.getElementById("link").appendChild(linkElem);
+
+      
+      let repoElem = document.createElement("a");
+      repoElem.href = link.github;
+      repoElem.target = "_blank";
+      repoElem.rel = "noopner noreferer";
+
+      let repoUrl = document.createElement("h3");
+      repoUrl.innerText = link.github;
+
+      let repoTitle = document.createElement("p");
+      repoTitle.innerText = link.title;
+
+      repoElem.appendChild(repoUrl);
+      repoElem.appendChild(repoTitle);
+
+      document.getElementById("repository").appendChild(repoElem);
     })
   });
 });

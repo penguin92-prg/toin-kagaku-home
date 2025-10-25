@@ -2,6 +2,7 @@
 
 :root{
   /* 数値 */
+  --mainWidth: 60%;
 
   /* 色 */
   --base1: #ffffff;
@@ -27,4 +28,10 @@
   --shadow1: 0 0 0.5rem rgba(0 0 0 / 24%);
   --shadow2: 0 0 0.5rem rgba(0 0 0 / 16%);
   --shadow3: 0 0 0.5rem rgba(0 0 0 / 8%);
+}
+
+@media (max-width: 500px) {
+  :root{
+    --mainWidth: 80%;
+  }
 }
