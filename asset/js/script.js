@@ -1,4 +1,9 @@
 window.addEventListener("load", function(){
+  document.getElementById("menuOpen").addEventListener("click", function(){
+    this.classList.toggle("active");
+    document.querySelector("menu").classList.toggle("active");
+  });
+
   const clockItv = setInterval(updateClock, 1000);
 
   fetch("/asset/php/getLinks.php")

@@ -90,7 +90,22 @@ function ver($path) {
       <a href="#about">About</a>
       <a href="#link">Links</a>
       <a href="#repository">Repositories</a>
+
+      <button id="menuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
+
+    <menu>
+      <ul>
+        <li><a href="#">Top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#link">Links</a></li>
+        <li><a href="#repository">Repositories</a></li>
+      </ul>
+    </menu>
 
     <span id="topspan"></span>
 
@@ -172,7 +187,7 @@ function ver($path) {
     <!-- ================================================== -->
 
     <footer>
-      <p>&copy; 2025 桐蔭科学部&emsp;All rights reserved. </p>
+      <p>&copy; 2025 桐蔭科学部</p>
     </footer>
 
     <!-- ================================================== -->

@@ -28,10 +28,16 @@
   --shadow1: 0 0 0.5rem rgba(0 0 0 / 24%);
   --shadow2: 0 0 0.5rem rgba(0 0 0 / 16%);
   --shadow3: 0 0 0.5rem rgba(0 0 0 / 8%);
+
+  --menuDisplay1: block;
+  --menuDisplay2: none;
 }
 
 @media (max-width: 500px) {
   :root{
     --mainWidth: 80%;
+
+    --menuDisplay1: none;
+    --menuDisplay2: block;
   }
 }
