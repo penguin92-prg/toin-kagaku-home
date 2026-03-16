@@ -69,7 +69,6 @@ function ver($path) {
     <meta property="og:site_name" content="桐蔭科学部 | ホーム"/>
     <meta property="og:image" content="https://toinkagaku.net/asset/favicon/favicon.png"/>
 
-
   </head>
 
 
